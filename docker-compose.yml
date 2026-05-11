@@ -1,0 +1,11 @@
+services:
+  # Aapka PHP Server
+  web:
+    build: .
+    container_name: php-dev-server
+    volumes:
+      - .:/var/www/html
+    ports:
+      - "8080:80"
+    # PHP extensions jo database connection ke liye chahiye
+    privileged: true

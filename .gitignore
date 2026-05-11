@@ -1,0 +1,9 @@
+.env
+vendor/
+node_modules/
+*.log
+.DS_Store
+storage/
+.git/
+# Ignore subfolder git if any
+*/.git
