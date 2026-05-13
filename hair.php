@@ -1,0 +1,62 @@
+<?php include 'header.php'; ?>
+
+<!-- Hair Hero -->
+<section class="relative h-[40vh] flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 z-0">
+        <img src="assets/img/service1.png" alt="Hair Hero" class="w-full h-full object-cover opacity-60">
+        <div class="absolute inset-0 bg-neutral-dark/40"></div>
+    </div>
+    <div class="relative z-10 text-center reveal">
+        <h3 class="text-white font-sans uppercase tracking-[0.5em] mb-4 text-sm font-bold">Portfolio</h3>
+        <h1 class="text-5xl md:text-7xl font-playfair text-white mb-6">Hair <span class="italic text-accent text-glow">Artistry</span></h1>
+        <div class="w-24 h-[1px] bg-accent mx-auto"></div>
+    </div>
+</section>
+
+<!-- Gallery Filter -->
+<div class="py-10 bg-white text-center">
+    <div class="flex flex-wrap justify-center gap-8 font-sans text-xs uppercase tracking-[0.3em] text-neutral-muted">
+        <a href="gallery.php" class="hover:text-accent transition-colors">All</a>
+        <a href="hair.php" class="hover:text-accent transition-colors text-accent border-b border-accent pb-1">Hair</a>
+        <a href="makeup.php" class="hover:text-accent transition-colors">Makeup</a>
+        <a href="nails.php" class="hover:text-accent transition-colors">Nails</a>
+        <a href="spa.php" class="hover:text-accent transition-colors">Spa</a>
+    </div>
+</div>
+
+<!-- Hair Gallery -->
+<section class="py-20 px-10 bg-white">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <!-- Item 1 -->
+        <div class="group relative overflow-hidden rounded-2xl reveal shadow-xl">
+            <img src="assets/img/gallery1.png" alt="Hair Style" class="w-full h-[400px] object-cover transition-transform duration-1000 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-dark/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
+            <div class="absolute bottom-0 p-8 translate-y-10 group-hover:translate-y-0 transition-transform duration-700">
+                <h4 class="text-white font-playfair text-2xl mb-2">Platinum Balayage</h4>
+                <p class="text-accent text-xs uppercase tracking-widest font-bold">Transformation</p>
+            </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="group relative overflow-hidden rounded-2xl reveal delay-100 shadow-xl">
+            <img src="assets/img/service1.png" alt="Hair Style" class="w-full h-[400px] object-cover transition-transform duration-1000 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-dark/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
+            <div class="absolute bottom-0 p-8 translate-y-10 group-hover:translate-y-0 transition-transform duration-700">
+                <h4 class="text-white font-playfair text-2xl mb-2">Imperial Waves</h4>
+                <p class="text-accent text-xs uppercase tracking-widest font-bold">Editorial Styling</p>
+            </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="group relative overflow-hidden rounded-2xl reveal delay-200 shadow-xl">
+            <img src="assets/img/service6.png" alt="Hair Style" class="w-full h-[400px] object-cover transition-transform duration-1000 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-dark/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
+            <div class="absolute bottom-0 p-8 translate-y-10 group-hover:translate-y-0 transition-transform duration-700">
+                <h4 class="text-white font-playfair text-2xl mb-2">Zen Scalp Treatment</h4>
+                <p class="text-accent text-xs uppercase tracking-widest font-bold">Therapeutic Care</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<?php include 'footer.php'; ?>
