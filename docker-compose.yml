@@ -1,11 +1,12 @@
 services:
-  # Aapka PHP Server
   web:
     build: .
     container_name: php-dev-server
     volumes:
-      - .:/var/www/html
+      - ./salonhub:/var/www/html
     ports:
       - "8080:80"
-    # PHP extensions jo database connection ke liye chahiye
     privileged: true
+    environment:
+      - APACHE_RUN_USER=www-data
+      - APACHE_RUN_GROUP=www-data
