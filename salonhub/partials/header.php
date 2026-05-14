@@ -194,6 +194,7 @@ require_once $base_path . 'partials/db.php';
             </div>
 
             <a href="<?php echo $base_path; ?>membership.php" class="text-neutral-dark hover:text-accent transition-colors duration-300 font-medium">Membership</a>
+            <a href="<?php echo $base_path; ?>contact.php" class="text-neutral-dark hover:text-accent transition-colors duration-300 font-medium">Contact</a>
 
             <!-- Boutique Dropdown -->
             <div class="relative group">
