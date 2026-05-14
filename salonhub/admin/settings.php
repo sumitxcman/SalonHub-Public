@@ -58,7 +58,7 @@
                         </div>
                         <div class="space-y-2 md:col-span-2">
                             <label class="text-neutral-muted text-[10px] uppercase tracking-widest font-bold ml-1">Address</label>
-                            <textarea class="w-full bg-secondary border border-accent/10 px-6 py-4 rounded-2xl focus:outline-none focus:border-accent text-sm font-sans tracking-wider resize-none" rows="2">12 Luxury Lane, Mayfair, London, W1J 7JZ</textarea>
+                            <textarea class="w-full bg-secondary border border-accent/10 px-6 py-4 rounded-2xl focus:outline-none focus:border-accent text-sm font-sans tracking-wider resize-none" rows="2">Plot No. 123, Swaroop Nagar, Delhi - 110042</textarea>
                         </div>
                     </div>
                 </div>

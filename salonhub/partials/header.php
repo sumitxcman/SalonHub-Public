@@ -114,6 +114,11 @@ require_once $base_path . 'partials/db.php';
             <h1 class="text-2xl font-playfair tracking-[0.2em] uppercase text-neutral-dark">Salon<span class="text-accent italic lowercase">Hub</span></h1>
         </a>
 
+        <!-- Hamburger Icon (Mobile Only) -->
+        <button id="mobile-menu-open" class="lg:hidden text-neutral-dark hover:text-accent p-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x1="20" y1="12" y2="12"/><line x1="4" x1="20" y1="6" y2="6"/><line x1="4" x1="20" y1="18" y2="18"/></svg>
+        </button>
+
         <!-- Desktop Navigation -->
         <div class="hidden lg:flex items-center gap-8 font-sans text-[11px] uppercase tracking-[0.2em] font-bold text-neutral-dark/80">
             <!-- Home -->
@@ -128,55 +133,51 @@ require_once $base_path . 'partials/db.php';
                     Services
                     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover:rotate-180 transition-transform duration-500"><path d="m6 9 6 6 6-6"/></svg>
                 </a>
-                <!-- Dropdown Menu -->
                 <div class="absolute top-full -left-4 w-64 pt-4 opacity-0 translate-y-4 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-500 z-50 before:absolute before:-top-4 before:left-0 before:w-full before:h-4 before:content-['']">
                     <div class="bg-white/95 backdrop-blur-xl border border-accent/5 rounded-2xl shadow-2xl overflow-hidden">
                         <div class="p-4 space-y-1">
-                        <a href="<?php echo $partial_path; ?>hair.php" class="flex items-center gap-4 p-3 hover:bg-secondary rounded-xl transition-all group/item">
-                            <div class="w-8 h-8 bg-accent/10 rounded-lg flex items-center justify-center text-accent group-hover/item:bg-accent group-hover/item:text-white transition-colors">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 0 1 10 10c0 5.523-4.477 10-10 10S2 17.523 2 12A10 10 0 0 1 12 2Z"/></svg>
-                            </div>
-                            <div>
-                                <p class="text-neutral-dark text-[10px] tracking-widest uppercase">Hair Artistry</p>
-                                <p class="text-neutral-muted text-[8px] tracking-normal lowercase italic mt-0.5">Balayage & Couture Cuts</p>
-                            </div>
-                        </a>
-                        <a href="<?php echo $partial_path; ?>spa.php" class="flex items-center gap-4 p-3 hover:bg-secondary rounded-xl transition-all group/item">
-                            <div class="w-8 h-8 bg-accent/10 rounded-lg flex items-center justify-center text-accent group-hover/item:bg-accent group-hover/item:text-white transition-colors">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-                            </div>
-                            <div>
-                                <p class="text-neutral-dark text-[10px] tracking-widest uppercase">Zen Spa</p>
-                                <p class="text-neutral-muted text-[8px] tracking-normal lowercase italic mt-0.5">Rituals & Therapy</p>
-                            </div>
-                        </a>
-                        <a href="<?php echo $partial_path; ?>makeup.php" class="flex items-center gap-4 p-3 hover:bg-secondary rounded-xl transition-all group/item">
-                            <div class="w-8 h-8 bg-accent/10 rounded-lg flex items-center justify-center text-accent group-hover/item:bg-accent group-hover/item:text-white transition-colors">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 3a2 2 0 1 1-4 0"/><path d="M19 3v12"/><path d="M15 3v12"/><path d="M15 15a2 2 0 1 0 4 0"/></svg>
-                            </div>
-                            <div>
-                                <p class="text-neutral-dark text-[10px] tracking-widest uppercase">Makeup</p>
-                                <p class="text-neutral-muted text-[8px] tracking-normal lowercase italic mt-0.5">Bridal & Editorial</p>
-                            </div>
-                        </a>
-                        <a href="<?php echo $partial_path; ?>nails.php" class="flex items-center gap-4 p-3 hover:bg-secondary rounded-xl transition-all group/item">
-                            <div class="w-8 h-8 bg-accent/10 rounded-lg flex items-center justify-center text-accent group-hover/item:bg-accent group-hover/item:text-white transition-colors">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20"/></svg>
-                            </div>
-                            <div>
-                                <p class="text-neutral-dark text-[10px] tracking-widest uppercase">Nails</p>
-                                <p class="text-neutral-muted text-[8px] tracking-normal lowercase italic mt-0.5">Couture & Extensions</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="bg-accent/5 p-4 text-center">
-                        <a href="<?php echo $base_path; ?>services.php" class="text-accent text-[9px] hover:underline">View All Services</a>
-                    </div>
+                            <a href="<?php echo $partial_path; ?>hair.php" class="flex items-center gap-4 p-3 hover:bg-secondary rounded-xl transition-all group/item">
+                                <div class="w-8 h-8 bg-accent/10 rounded-lg flex items-center justify-center text-accent group-hover/item:bg-accent group-hover/item:text-white transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 0 1 10 10c0 5.523-4.477 10-10 10S2 17.523 2 12A10 10 0 0 1 12 2Z"/></svg>
+                                </div>
+                                <div>
+                                    <p class="text-neutral-dark text-[10px] tracking-widest uppercase">Hair Artistry</p>
+                                    <p class="text-neutral-muted text-[8px] tracking-normal lowercase italic mt-0.5">Balayage & Couture Cuts</p>
+                                </div>
+                            </a>
+                            <a href="<?php echo $partial_path; ?>spa.php" class="flex items-center gap-4 p-3 hover:bg-secondary rounded-xl transition-all group/item">
+                                <div class="w-8 h-8 bg-accent/10 rounded-lg flex items-center justify-center text-accent group-hover/item:bg-accent group-hover/item:text-white transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                                </div>
+                                <div>
+                                    <p class="text-neutral-dark text-[10px] tracking-widest uppercase">Zen Spa</p>
+                                    <p class="text-neutral-muted text-[8px] tracking-normal lowercase italic mt-0.5">Rituals & Therapy</p>
+                                </div>
+                            </a>
+                            <a href="<?php echo $partial_path; ?>makeup.php" class="flex items-center gap-4 p-3 hover:bg-secondary rounded-xl transition-all group/item">
+                                <div class="w-8 h-8 bg-accent/10 rounded-lg flex items-center justify-center text-accent group-hover/item:bg-accent group-hover/item:text-white transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 3a2 2 0 1 1-4 0"/><path d="M19 3v12"/><path d="M15 3v12"/><path d="M15 15a2 2 0 1 0 4 0"/></svg>
+                                </div>
+                                <div>
+                                    <p class="text-neutral-dark text-[10px] tracking-widest uppercase">Makeup</p>
+                                    <p class="text-neutral-muted text-[8px] tracking-normal lowercase italic mt-0.5">Bridal & Editorial</p>
+                                </div>
+                            </a>
+                            <a href="<?php echo $partial_path; ?>nails.php" class="flex items-center gap-4 p-3 hover:bg-secondary rounded-xl transition-all group/item">
+                                <div class="w-8 h-8 bg-accent/10 rounded-lg flex items-center justify-center text-accent group-hover/item:bg-accent group-hover/item:text-white transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20"/></svg>
+                                </div>
+                                <div>
+                                    <p class="text-neutral-dark text-[10px] tracking-widest uppercase">Nails</p>
+                                    <p class="text-neutral-muted text-[8px] tracking-normal lowercase italic mt-0.5">Couture & Extensions</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Portfolio Dropdown -->
+            <!-- Gallery Dropdown -->
             <div class="relative group">
                 <a href="<?php echo $base_path; ?>gallery.php" class="flex items-center gap-1 hover:text-accent transition-colors duration-300">
                     Gallery
@@ -185,16 +186,22 @@ require_once $base_path . 'partials/db.php';
                 <div class="absolute top-full -left-4 w-56 pt-4 opacity-0 translate-y-4 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-500 z-50 before:absolute before:-top-4 before:left-0 before:w-full before:h-4 before:content-['']">
                     <div class="bg-white/95 backdrop-blur-xl border border-accent/5 rounded-2xl shadow-2xl overflow-hidden">
                         <div class="p-4 space-y-1">
-                        <a href="<?php echo $base_path; ?>gallery.php" class="block p-3 hover:bg-secondary rounded-xl text-[10px] tracking-widest transition-all">All Masterpieces</a>
-                        <a href="<?php echo $partial_path; ?>hair.php" class="block p-3 hover:bg-secondary rounded-xl text-[10px] tracking-widest transition-all">Hair Collection</a>
-                        <a href="<?php echo $partial_path; ?>makeup.php" class="block p-3 hover:bg-secondary rounded-xl text-[10px] tracking-widest transition-all">Bridal Artistry</a>
-                    </div>
+                            <a href="<?php echo $base_path; ?>gallery.php" class="block p-3 hover:bg-secondary rounded-xl text-[10px] tracking-widest transition-all">All Masterpieces</a>
+                            <a href="<?php echo $partial_path; ?>hair.php" class="block p-3 hover:bg-secondary rounded-xl text-[10px] tracking-widest transition-all">Hair Collection</a>
+                            <a href="<?php echo $partial_path; ?>makeup.php" class="block p-3 hover:bg-secondary rounded-xl text-[10px] tracking-widest transition-all">Bridal Artistry</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <a href="<?php echo $base_path; ?>membership.php" class="text-neutral-dark hover:text-accent transition-colors duration-300 font-medium">Membership</a>
-            <a href="<?php echo $base_path; ?>contact.php" class="text-neutral-dark hover:text-accent transition-colors duration-300 font-medium">Contact</a>
+            <a href="<?php echo $base_path; ?>membership.php" class="hover:text-accent transition-colors duration-300 relative group">
+                Membership
+                <span class="absolute -bottom-1 left-0 w-0 h-[1px] bg-accent transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="<?php echo $base_path; ?>contact.php" class="hover:text-accent transition-colors duration-300 relative group">
+                Contact
+                <span class="absolute -bottom-1 left-0 w-0 h-[1px] bg-accent transition-all duration-300 group-hover:w-full"></span>
+            </a>
 
             <!-- Boutique Dropdown -->
             <div class="relative group">
@@ -205,113 +212,214 @@ require_once $base_path . 'partials/db.php';
                 <div class="absolute top-full -left-4 w-64 pt-4 opacity-0 translate-y-4 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-500 z-50 before:absolute before:-top-4 before:left-0 before:w-full before:h-4 before:content-['']">
                     <div class="bg-white/95 backdrop-blur-xl border border-accent/5 rounded-2xl shadow-2xl overflow-hidden">
                         <div class="grid grid-cols-1 p-4 gap-2">
-                        <a href="<?php echo $base_path; ?>shop.php" class="flex items-center justify-between p-3 hover:bg-secondary rounded-xl transition-all group/shop">
-                            <span class="text-[10px]">Shop Home</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent opacity-0 group-hover/shop:opacity-100 -translate-x-2 group-hover/shop:translate-x-0 transition-all"><path d="m9 18 6-6-6-6"/></svg>
-                        </a>
-                        <a href="<?php echo $partial_path; ?>spa.php" class="flex items-center justify-between p-3 hover:bg-secondary rounded-xl transition-all group/shop cursor-pointer">
-                            <span class="text-[10px] pointer-events-none">Skincare Luxe</span>
-                            <span class="text-[8px] bg-accent/10 text-accent px-2 py-0.5 rounded-full uppercase pointer-events-none">New</span>
-                        </a>
-                    </div>
+                            <a href="<?php echo $base_path; ?>shop.php" class="flex items-center justify-between p-3 hover:bg-secondary rounded-xl transition-all group/shop">
+                                <span class="text-[10px]">Shop Home</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent opacity-0 group-hover/shop:opacity-100 -translate-x-2 group-hover/shop:translate-x-0 transition-all"><path d="m9 18 6-6-6-6"/></svg>
+                            </a>
+                            <a href="<?php echo $partial_path; ?>spa.php" class="flex items-center justify-between p-3 hover:bg-secondary rounded-xl transition-all group/shop">
+                                <span class="text-[10px]">Skincare Luxe</span>
+                                <span class="text-[8px] bg-accent/10 text-accent px-2 py-0.5 rounded-full uppercase">New</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Right Side: Search, Account, CTA -->
-        <div class="flex items-center gap-6">
-            <!-- Search -->
-            <button id="search-open" class="hidden md:block text-neutral-dark hover:text-accent transition-all duration-300 transform hover:scale-110">
+        <div class="flex items-center gap-6 relative">
+            <!-- Header Search Bar (Expanding to the left) -->
+            <div id="header-search-container" class="absolute right-[100%] top-1/2 -translate-y-1/2 w-0 overflow-hidden transition-all duration-500 bg-white z-10 flex items-center mr-4">
+                <input type="text" id="header-search-input" placeholder="SEARCH SERVICES..." class="w-[200px] bg-secondary px-6 py-2 rounded-full text-[10px] font-sans uppercase tracking-widest border border-accent/10 focus:outline-none focus:border-accent">
+                <button id="header-search-close" class="ml-2 text-neutral-muted hover:text-accent p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </div>
+
+            <!-- Search Icon -->
+            <button id="search-open" class="text-neutral-dark hover:text-accent transition-all duration-300 transform hover:scale-110">
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
             </button>
-
-            <!-- Cart Icon -->
-            <button id="cart-toggle" class="relative text-neutral-dark hover:text-accent transition-all duration-300 transform hover:scale-110">
+            <button id="cart-toggle" class="relative text-neutral-dark hover:text-accent transition-all transform hover:scale-110 duration-300">
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
                 <span id="cart-count" class="absolute -top-2 -right-2 bg-accent text-white text-[8px] font-bold w-4 h-4 rounded-full flex items-center justify-center">0</span>
             </button>
-
-            <!-- Dashboard Options / Account -->
+            
             <div class="relative group">
                 <?php if (isset($_SESSION['user_id'])): ?>
-                    <button class="text-accent flex items-center gap-2 py-2 group-hover:text-neutral-dark transition-all duration-300">
+                    <button class="text-accent flex items-center gap-2 py-2">
                         <div class="w-8 h-8 bg-accent/10 rounded-full flex items-center justify-center border border-accent/20">
                             <span class="text-[10px] font-bold"><?php echo strtoupper(substr($_SESSION['user_name'], 0, 1)); ?></span>
                         </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover:rotate-180 transition-transform duration-500"><path d="m6 9 6 6 6-6"/></svg>
                     </button>
-                    <!-- Dashboard Dropdown -->
-                    <div class="absolute top-full right-0 mt-4 w-56 bg-white/95 backdrop-blur-xl border border-accent/5 rounded-2xl shadow-2xl opacity-0 translate-y-4 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-500">
-                        <div class="p-4 space-y-1">
-                            <p class="px-3 py-1 text-[8px] uppercase tracking-widest text-neutral-muted border-b border-accent/5 mb-2">Welcome, <?php echo explode(' ', $_SESSION['user_name'])[0]; ?></p>
-                            <a href="<?php echo $base_path; ?>user_dashboard.php" class="flex items-center gap-3 p-3 hover:bg-secondary rounded-xl text-[10px] tracking-widest transition-all">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
-                                Dashboard
-                            </a>
-                            <a href="<?php echo $base_path; ?>logout.php" class="flex items-center gap-3 p-3 hover:bg-rose-50 text-rose-500 rounded-xl text-[10px] tracking-widest transition-all">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
-                                Sign Out
-                            </a>
-                        </div>
-                    </div>
                 <?php else: ?>
-                    <a href="<?php echo $base_path; ?>login.php" class="text-neutral-dark hover:text-accent transition-all duration-300">
+                    <a href="<?php echo $base_path; ?>login.php" class="text-neutral-dark hover:text-accent transition-all">
                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
                     </a>
                 <?php endif; ?>
             </div>
 
-            <!-- CTA -->
             <a href="<?php echo $base_path; ?>booking.php" class="hidden md:block bg-accent text-white px-8 py-3 rounded-full hover:bg-neutral-dark transition-all duration-500 shadow-xl shadow-accent/20 text-[10px] uppercase tracking-widest font-bold">Book Appointment</a>
-
-            <!-- Mobile Menu Toggle -->
-            <button id="mobile-menu-open" class="lg:hidden text-neutral-dark p-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
-            </button>
         </div>
     </nav>
 
-    <!-- Full Screen Search Overlay -->
+    <!-- Search Overlay -->
     <div id="search-overlay" class="fixed inset-0 bg-white/95 backdrop-blur-2xl z-[100] flex items-center justify-center opacity-0 pointer-events-none transition-all duration-500">
-        <button id="search-close" class="absolute top-10 right-10 text-neutral-dark hover:text-accent transition-all">
+        <button id="search-close" class="absolute top-10 right-10 text-neutral-dark hover:text-accent">
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
         </button>
         <div class="w-full max-w-4xl px-10 text-center">
-            <h3 class="text-accent font-sans uppercase tracking-[0.6em] text-xs mb-10 font-bold">What are you looking for?</h3>
-            <input type="text" placeholder="SEARCH SERVICES, ARTISTS, PRODUCTS..." class="w-full bg-transparent border-b-2 border-accent/20 py-6 text-3xl md:text-5xl font-playfair text-neutral-dark focus:outline-none focus:border-accent transition-all placeholder:text-neutral-muted/30">
-            <div class="mt-12 flex flex-wrap justify-center gap-6 text-neutral-muted font-sans text-[10px] uppercase tracking-widest font-bold">
-                <span>Trending:</span>
-                <a href="<?php echo $partial_path; ?>hair.php" class="hover:text-accent transition-colors">Balayage</a>
-                <a href="<?php echo $partial_path; ?>makeup.php" class="hover:text-accent transition-colors">Bridal</a>
-                <a href="<?php echo $partial_path; ?>nails.php" class="hover:text-accent transition-colors">Nail Couture</a>
+            <input type="text" placeholder="SEARCH SERVICES..." class="w-full bg-transparent border-b-2 border-accent/20 py-6 text-5xl font-playfair text-neutral-dark focus:outline-none focus:border-accent transition-all">
+        </div>
+    </div>
+
+    <!-- Cart Drawer -->
+    <div id="cart-drawer" class="fixed inset-0 z-[100] pointer-events-none overflow-hidden">
+        <div id="cart-overlay" class="absolute inset-0 bg-neutral-dark/40 backdrop-blur-sm opacity-0 transition-opacity duration-500"></div>
+        <div id="cart-panel" class="absolute top-0 right-0 w-full max-w-md h-full bg-white shadow-2xl translate-x-full transition-transform duration-700 flex flex-col">
+            <div class="p-8 border-b border-accent/10 flex justify-between items-center bg-secondary/30">
+                <h3 class="text-xl font-playfair text-neutral-dark italic">Your Sanctuary <span class="text-accent not-italic">Bag</span></h3>
+                <button id="cart-close" class="text-neutral-muted hover:text-accent transition-all">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </div>
+            <div id="cart-items" class="flex-1 overflow-y-auto p-8 space-y-8">
+                <div class="text-center py-20 opacity-40 italic font-sans text-sm">Your sanctuary bag is empty.</div>
+            </div>
+            <div class="p-8 border-t border-accent/10 bg-secondary/20">
+                <div class="flex justify-between items-center mb-8">
+                    <span class="text-neutral-muted font-sans uppercase tracking-widest text-[10px] font-bold">Total Investment</span>
+                    <span id="cart-total" class="text-2xl font-playfair text-neutral-dark font-bold">₹0.00</span>
+                </div>
+                <a href="<?php echo $base_path; ?>checkout.php" class="block text-center w-full bg-accent text-white py-5 rounded-full font-sans uppercase tracking-[0.3em] text-[10px] font-bold hover:bg-neutral-dark transition-all duration-500 shadow-2xl shadow-accent/20">
+                    Proceed to Checkout
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu-drawer" class="fixed inset-0 z-[110] pointer-events-none">
+        <div id="mobile-menu-overlay" class="absolute inset-0 bg-neutral-dark/40 backdrop-blur-sm opacity-0 transition-opacity duration-500"></div>
+        <div id="mobile-menu-panel" class="absolute top-0 left-0 w-[80%] max-w-sm h-full bg-white shadow-2xl -translate-x-full transition-transform duration-700 flex flex-col p-10">
+            <div class="flex justify-between items-center mb-16">
+                <h3 class="text-2xl font-playfair text-neutral-dark">Salon<span class="text-accent italic">Hub</span></h3>
+                <button id="mobile-menu-close" class="text-neutral-muted hover:text-accent">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </div>
+            <nav class="space-y-8 font-sans text-xs uppercase tracking-[0.3em] font-bold">
+                <a href="<?php echo $base_path; ?>index.php" class="block hover:text-accent">Home</a>
+                <a href="<?php echo $base_path; ?>services.php" class="block hover:text-accent">Services</a>
+                <a href="<?php echo $base_path; ?>gallery.php" class="block hover:text-accent">Gallery</a>
+                <a href="<?php echo $base_path; ?>membership.php" class="block hover:text-accent">Membership</a>
+                <a href="<?php echo $base_path; ?>shop.php" class="block hover:text-accent">Boutique</a>
+                <a href="<?php echo $base_path; ?>contact.php" class="block hover:text-accent">Contact</a>
+            </nav>
+            <div class="mt-auto pt-10 border-t border-accent/10">
+                <a href="<?php echo $base_path; ?>booking.php" class="block w-full bg-accent text-white py-4 rounded-full text-center text-[10px] uppercase tracking-widest font-bold">Book Now</a>
             </div>
         </div>
     </div>
 
     <script>
-        const searchOpen = document.getElementById('search-open');
-        const searchOpenMobile = document.getElementById('search-open-mobile');
-        const searchClose = document.getElementById('search-close');
-        const searchOverlay = document.getElementById('search-overlay');
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mobile Menu Logic
+            const mobileMenuOpen = document.getElementById('mobile-menu-open');
+            const mobileMenuClose = document.getElementById('mobile-menu-close');
+            const mobileMenuDrawer = document.getElementById('mobile-menu-drawer');
+            const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+            const mobileMenuPanel = document.getElementById('mobile-menu-panel');
 
-        const openSearch = () => {
-            searchOverlay.classList.remove('opacity-0', 'pointer-events-none');
-            searchOverlay.classList.add('opacity-100');
-            setTimeout(() => searchOverlay.querySelector('input').focus(), 500);
-        };
+            const openMobileMenu = () => {
+                mobileMenuDrawer.classList.remove('pointer-events-none');
+                mobileMenuOverlay.classList.replace('opacity-0', 'opacity-100');
+                mobileMenuPanel.classList.replace('-translate-x-full', 'translate-x-0');
+            };
 
-        const closeSearch = () => {
-            searchOverlay.classList.add('opacity-0', 'pointer-events-none');
-            searchOverlay.classList.remove('opacity-100');
-        };
+            const closeMobileMenu = () => {
+                mobileMenuOverlay.classList.replace('opacity-100', 'opacity-0');
+                mobileMenuPanel.classList.replace('translate-x-0', '-translate-x-full');
+                setTimeout(() => mobileMenuDrawer.classList.add('pointer-events-none'), 500);
+            };
 
-        searchOpen.onclick = openSearch;
-        searchOpenMobile.onclick = openSearch;
-        searchClose.onclick = closeSearch;
+            if (mobileMenuOpen) mobileMenuOpen.onclick = openMobileMenu;
+            if (mobileMenuClose) mobileMenuClose.onclick = closeMobileMenu;
+            if (mobileMenuOverlay) mobileMenuOverlay.onclick = closeMobileMenu;
 
-        // Escape key to close
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') closeSearch();
+            // Header Search Logic
+            const searchOpen = document.getElementById('search-open');
+            const searchClose = document.getElementById('header-search-close');
+            const searchContainer = document.getElementById('header-search-container');
+            const searchInput = document.getElementById('header-search-input');
+
+            if (searchOpen) searchOpen.onclick = () => {
+                searchContainer.style.width = '280px';
+                searchContainer.style.paddingLeft = '10px';
+                setTimeout(() => searchInput.focus(), 300);
+            };
+            if (searchClose) searchClose.onclick = () => {
+                searchContainer.style.width = '0';
+                searchContainer.style.paddingLeft = '0';
+            };
+
+            const cartToggle = document.getElementById('cart-toggle');
+            const cartClose = document.getElementById('cart-close');
+            const cartDrawer = document.getElementById('cart-drawer');
+            const cartOverlay = document.getElementById('cart-overlay');
+            const cartPanel = document.getElementById('cart-panel');
+            const cartItemsContainer = document.getElementById('cart-items');
+            const cartCount = document.getElementById('cart-count');
+            const cartTotal = document.getElementById('cart-total');
+
+            let cart = JSON.parse(localStorage.getItem('salonhub_cart')) || [];
+
+            window.showToast = (message) => {
+                const toast = document.createElement('div');
+                toast.className = 'fixed bottom-10 left-1/2 -translate-x-1/2 z-[110] bg-neutral-dark text-white px-8 py-4 rounded-full font-sans text-[10px] uppercase tracking-widest shadow-2xl transition-all duration-500 border border-accent/20';
+                toast.style.opacity = '0';
+                toast.innerHTML = `<span class="text-accent mr-2">✦</span> ${message}`;
+                document.body.appendChild(toast);
+                setTimeout(() => toast.style.opacity = '1', 10);
+                setTimeout(() => { toast.style.opacity = '0'; setTimeout(() => toast.remove(), 500); }, 3000);
+            }
+
+            const openCart = () => { cartDrawer.classList.remove('pointer-events-none'); cartOverlay.classList.replace('opacity-0', 'opacity-100'); cartPanel.classList.replace('translate-x-full', 'translate-x-0'); };
+            const closeCart = () => { cartOverlay.classList.replace('opacity-100', 'opacity-0'); cartPanel.classList.replace('translate-x-0', 'translate-x-full'); setTimeout(() => cartDrawer.classList.add('pointer-events-none'), 500); };
+
+            function updateCartUI() {
+                if (cartCount) cartCount.innerText = cart.length;
+                if (cart.length === 0) {
+                    cartItemsContainer.innerHTML = '<div class="text-center py-20 opacity-40 italic font-sans text-sm">Your sanctuary bag is empty.</div>';
+                    cartTotal.innerText = '₹0.00';
+                    return;
+                }
+                let total = 0;
+                cartItemsContainer.innerHTML = cart.map((item, index) => {
+                    total += parseInt(item.price);
+                    return `<div class="flex gap-4 items-center animate-fade-in"><img src="${item.img}" class="w-16 h-16 object-cover rounded-xl border border-accent/10"><div class="flex-1"><h4 class="text-neutral-dark font-playfair text-sm">${item.name}</h4><p class="text-accent font-sans text-xs">₹${item.price}</p></div><button onclick="removeFromCart(${index})" class="text-neutral-muted hover:text-accent transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg></button></div>`;
+                }).join('');
+                cartTotal.innerText = `₹${total.toLocaleString()}`;
+            }
+
+            window.removeFromCart = (index) => { cart.splice(index, 1); localStorage.setItem('salonhub_cart', JSON.stringify(cart)); updateCartUI(); showToast('Item removed'); };
+
+            document.addEventListener('click', (e) => {
+                const btn = e.target.closest('.add-to-cart');
+                if (btn) {
+                    e.preventDefault();
+                    const product = { name: btn.getAttribute('data-name'), price: btn.getAttribute('data-price'), img: btn.getAttribute('data-img') };
+                    cart.push(product);
+                    localStorage.setItem('salonhub_cart', JSON.stringify(cart));
+                    updateCartUI(); openCart(); showToast(`${product.name} added to bag`);
+                }
+            });
+
+            if (cartToggle) cartToggle.onclick = openCart;
+            if (cartClose) cartClose.onclick = closeCart;
+            if (cartOverlay) cartOverlay.onclick = closeCart;
+
+            updateCartUI();
         });
     </script>
+</body>
+</html>

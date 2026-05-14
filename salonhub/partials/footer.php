@@ -28,9 +28,9 @@
         <div class="space-y-8">
             <h4 class="text-accent font-playfair text-xl">Sanctuary</h4>
             <p class="text-neutral-muted font-sans text-xs uppercase tracking-widest leading-relaxed">
-                12 Luxury Lane, Mayfair<br>
-                London, W1J 7JZ<br>
-                +44 20 7946 0000
+                Plot No. 123, Swaroop Nagar<br>
+                Delhi - 110042, India<br>
+                +91 7982294041
             </p>
         </div>
 
