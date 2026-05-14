@@ -41,7 +41,7 @@
                     <h4 class="text-2xl font-playfair text-neutral-dark mb-4">Imperial Rose Glow Serum</h4>
                     <div class="flex justify-between items-center pt-6 border-t border-accent/10">
                         <span class="text-xl font-playfair text-neutral-dark">$124.00</span>
-                        <button class="bg-accent text-white px-8 py-3 rounded-full text-[10px] uppercase tracking-widest font-bold hover:bg-neutral-dark transition-all duration-500 shadow-lg shadow-accent/20">Add to Bag</button>
+                        <button class="add-to-cart bg-accent text-white px-8 py-3 rounded-full text-[10px] uppercase tracking-widest font-bold hover:bg-neutral-dark transition-all duration-500 shadow-lg shadow-accent/20" data-name="Imperial Rose Glow Serum" data-price="124" data-img="<?php echo $base_path; ?>assets/img/skincare_serum.png">Add to Bag</button>
                     </div>
                 </div>
             </div>
@@ -59,7 +59,7 @@
                     <h4 class="text-2xl font-playfair text-neutral-dark mb-4">Botanical Zen Mist</h4>
                     <div class="flex justify-between items-center pt-6 border-t border-accent/10">
                         <span class="text-xl font-playfair text-neutral-dark">$68.00</span>
-                        <button class="bg-accent text-white px-8 py-3 rounded-full text-[10px] uppercase tracking-widest font-bold hover:bg-neutral-dark transition-all duration-500 shadow-lg shadow-accent/20">Add to Bag</button>
+                        <button class="add-to-cart bg-accent text-white px-8 py-3 rounded-full text-[10px] uppercase tracking-widest font-bold hover:bg-neutral-dark transition-all duration-500 shadow-lg shadow-accent/20" data-name="Botanical Zen Mist" data-price="68" data-img="<?php echo $base_path; ?>assets/img/skincare_mist.png">Add to Bag</button>
                     </div>
                 </div>
             </div>
@@ -77,7 +77,7 @@
                     <h4 class="text-2xl font-playfair text-neutral-dark mb-4">Gold Rejuvenating Mask</h4>
                     <div class="flex justify-between items-center pt-6 border-t border-accent/10">
                         <span class="text-xl font-playfair text-neutral-dark">$185.00</span>
-                        <button class="bg-accent text-white px-8 py-3 rounded-full text-[10px] uppercase tracking-widest font-bold hover:bg-neutral-dark transition-all duration-500 shadow-lg shadow-accent/20">Add to Bag</button>
+                        <button class="add-to-cart bg-accent text-white px-8 py-3 rounded-full text-[10px] uppercase tracking-widest font-bold hover:bg-neutral-dark transition-all duration-500 shadow-lg shadow-accent/20" data-name="Gold Rejuvenating Mask" data-price="185" data-img="<?php echo $base_path; ?>assets/img/skincare_mask.png">Add to Bag</button>
                     </div>
                 </div>
             </div>
@@ -92,7 +92,7 @@
                     <h4 class="text-2xl font-playfair text-neutral-dark mb-4">Silk Path Night Cream</h4>
                     <div class="flex justify-between items-center pt-6 border-t border-accent/10">
                         <span class="text-xl font-playfair text-neutral-dark">$92.00</span>
-                        <button class="bg-accent text-white px-8 py-3 rounded-full text-[10px] uppercase tracking-widest font-bold hover:bg-neutral-dark transition-all duration-500 shadow-lg shadow-accent/20">Add to Bag</button>
+                        <button class="add-to-cart bg-accent text-white px-8 py-3 rounded-full text-[10px] uppercase tracking-widest font-bold hover:bg-neutral-dark transition-all duration-500 shadow-lg shadow-accent/20" data-name="Silk Path Night Cream" data-price="92" data-img="<?php echo $base_path; ?>assets/img/skincare_cream.png">Add to Bag</button>
                     </div>
                 </div>
             </div>
@@ -107,7 +107,7 @@
                     <h4 class="text-2xl font-playfair text-neutral-dark mb-4">Pure Oxygen Exfoliator</h4>
                     <div class="flex justify-between items-center pt-6 border-t border-accent/10">
                         <span class="text-xl font-playfair text-neutral-dark">$55.00</span>
-                        <button class="bg-accent text-white px-8 py-3 rounded-full text-[10px] uppercase tracking-widest font-bold hover:bg-neutral-dark transition-all duration-500 shadow-lg shadow-accent/20">Add to Bag</button>
+                        <button class="add-to-cart bg-accent text-white px-8 py-3 rounded-full text-[10px] uppercase tracking-widest font-bold hover:bg-neutral-dark transition-all duration-500 shadow-lg shadow-accent/20" data-name="Pure Oxygen Exfoliator" data-price="55" data-img="<?php echo $base_path; ?>assets/img/skincare_exfoliator.png">Add to Bag</button>
                     </div>
                 </div>
             </div>
@@ -122,7 +122,7 @@
                     <h4 class="text-2xl font-playfair text-neutral-dark mb-4">Celestial Eye Elixir</h4>
                     <div class="flex justify-between items-center pt-6 border-t border-accent/10">
                         <span class="text-xl font-playfair text-neutral-dark">$110.00</span>
-                        <button class="bg-accent text-white px-8 py-3 rounded-full text-[10px] uppercase tracking-widest font-bold hover:bg-neutral-dark transition-all duration-500 shadow-lg shadow-accent/20">Add to Bag</button>
+                        <button class="add-to-cart bg-accent text-white px-8 py-3 rounded-full text-[10px] uppercase tracking-widest font-bold hover:bg-neutral-dark transition-all duration-500 shadow-lg shadow-accent/20" data-name="Celestial Eye Elixir" data-price="110" data-img="<?php echo $base_path; ?>assets/img/skincare_eye_elixir.png">Add to Bag</button>
                     </div>
                 </div>
             </div>

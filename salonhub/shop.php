@@ -40,7 +40,7 @@
                 <div class="group reveal">
                     <div class="relative overflow-hidden rounded-2xl mb-6 bg-secondary">
                         <img src="assets/img/service8.png" alt="Product" class="w-full h-[350px] object-cover transition-transform duration-1000 group-hover:scale-110">
-                        <button class="absolute bottom-0 w-full bg-accent text-white py-4 font-sans uppercase tracking-[0.2em] text-[10px] translate-y-full group-hover:translate-y-0 transition-transform duration-500">Add to Bag</button>
+                        <button class="add-to-cart absolute bottom-0 w-full bg-accent text-white py-4 font-sans uppercase tracking-[0.2em] text-[10px] translate-y-full group-hover:translate-y-0 transition-transform duration-500" data-name="Imperial Makeup Kit" data-price="8500" data-img="assets/img/service8.png">Add to Bag</button>
                     </div>
                     <h4 class="text-xl font-playfair text-neutral-dark mb-2">Imperial Makeup Kit</h4>
                     <p class="text-accent font-sans text-lg">₹8,500</p>
@@ -50,7 +50,7 @@
                 <div class="group reveal delay-100">
                     <div class="relative overflow-hidden rounded-2xl mb-6 bg-secondary">
                         <img src="assets/img/service7.png" alt="Product" class="w-full h-[350px] object-cover transition-transform duration-1000 group-hover:scale-110">
-                        <button class="absolute bottom-0 w-full bg-accent text-white py-4 font-sans uppercase tracking-[0.2em] text-[10px] translate-y-full group-hover:translate-y-0 transition-transform duration-500">Add to Bag</button>
+                        <button class="add-to-cart absolute bottom-0 w-full bg-accent text-white py-4 font-sans uppercase tracking-[0.2em] text-[10px] translate-y-full group-hover:translate-y-0 transition-transform duration-500" data-name="Velvet Skin Oil" data-price="4200" data-img="assets/img/service7.png">Add to Bag</button>
                     </div>
                     <h4 class="text-xl font-playfair text-neutral-dark mb-2">Velvet Skin Oil</h4>
                     <p class="text-accent font-sans text-lg">₹4,200</p>
@@ -60,7 +60,7 @@
                 <div class="group reveal delay-200">
                     <div class="relative overflow-hidden rounded-2xl mb-6 bg-secondary">
                         <img src="assets/img/service3.png" alt="Product" class="w-full h-[350px] object-cover transition-transform duration-1000 group-hover:scale-110">
-                        <button class="absolute bottom-0 w-full bg-accent text-white py-4 font-sans uppercase tracking-[0.2em] text-[10px] translate-y-full group-hover:translate-y-0 transition-transform duration-500">Add to Bag</button>
+                        <button class="add-to-cart absolute bottom-0 w-full bg-accent text-white py-4 font-sans uppercase tracking-[0.2em] text-[10px] translate-y-full group-hover:translate-y-0 transition-transform duration-500" data-name="24K Gold Facial Mask" data-price="12000" data-img="assets/img/service3.png">Add to Bag</button>
                     </div>
                     <h4 class="text-xl font-playfair text-neutral-dark mb-2">24K Gold Facial Mask</h4>
                     <p class="text-accent font-sans text-lg">₹12,000</p>

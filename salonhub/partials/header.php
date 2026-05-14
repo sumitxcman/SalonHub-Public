@@ -193,6 +193,8 @@ require_once $base_path . 'partials/db.php';
                 </div>
             </div>
 
+            <a href="<?php echo $base_path; ?>membership.php" class="text-neutral-dark hover:text-accent transition-colors duration-300 font-medium">Membership</a>
+
             <!-- Boutique Dropdown -->
             <div class="relative group">
                 <a href="<?php echo $base_path; ?>shop.php" class="flex items-center gap-1 hover:text-accent transition-colors duration-300">
@@ -221,6 +223,12 @@ require_once $base_path . 'partials/db.php';
             <!-- Search -->
             <button id="search-open" class="hidden md:block text-neutral-dark hover:text-accent transition-all duration-300 transform hover:scale-110">
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </button>
+
+            <!-- Cart Icon -->
+            <button id="cart-toggle" class="relative text-neutral-dark hover:text-accent transition-all duration-300 transform hover:scale-110">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                <span id="cart-count" class="absolute -top-2 -right-2 bg-accent text-white text-[8px] font-bold w-4 h-4 rounded-full flex items-center justify-center">0</span>
             </button>
 
             <!-- Dashboard Options / Account -->
