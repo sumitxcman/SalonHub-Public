@@ -114,11 +114,6 @@ require_once $base_path . 'partials/db.php';
             <h1 class="text-2xl font-playfair tracking-[0.2em] uppercase text-neutral-dark">Salon<span class="text-accent italic lowercase">Hub</span></h1>
         </a>
 
-        <!-- Hamburger Icon (Mobile Only) -->
-        <button id="mobile-menu-open" class="lg:hidden text-neutral-dark hover:text-accent p-2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x1="20" y1="12" y2="12"/><line x1="4" x1="20" y1="6" y2="6"/><line x1="4" x1="20" y1="18" y2="18"/></svg>
-        </button>
-
         <!-- Desktop Navigation -->
         <div class="hidden lg:flex items-center gap-8 font-sans text-[11px] uppercase tracking-[0.2em] font-bold text-neutral-dark/80">
             <!-- Home -->
@@ -263,15 +258,7 @@ require_once $base_path . 'partials/db.php';
         </div>
     </nav>
 
-    <!-- Search Overlay -->
-    <div id="search-overlay" class="fixed inset-0 bg-white/95 backdrop-blur-2xl z-[100] flex items-center justify-center opacity-0 pointer-events-none transition-all duration-500">
-        <button id="search-close" class="absolute top-10 right-10 text-neutral-dark hover:text-accent">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-        </button>
-        <div class="w-full max-w-4xl px-10 text-center">
-            <input type="text" placeholder="SEARCH SERVICES..." class="w-full bg-transparent border-b-2 border-accent/20 py-6 text-5xl font-playfair text-neutral-dark focus:outline-none focus:border-accent transition-all">
-        </div>
-    </div>
+
 
     <!-- Cart Drawer -->
     <div id="cart-drawer" class="fixed inset-0 z-[100] pointer-events-none overflow-hidden">
@@ -297,54 +284,9 @@ require_once $base_path . 'partials/db.php';
             </div>
         </div>
     </div>
-    <!-- Mobile Navigation Drawer -->
-    <div id="mobile-menu-drawer" class="fixed inset-0 z-[110] pointer-events-none">
-        <div id="mobile-menu-overlay" class="absolute inset-0 bg-neutral-dark/40 backdrop-blur-sm opacity-0 transition-opacity duration-500"></div>
-        <div id="mobile-menu-panel" class="absolute top-0 left-0 w-[80%] max-w-sm h-full bg-white shadow-2xl -translate-x-full transition-transform duration-700 flex flex-col p-10">
-            <div class="flex justify-between items-center mb-16">
-                <h3 class="text-2xl font-playfair text-neutral-dark">Salon<span class="text-accent italic">Hub</span></h3>
-                <button id="mobile-menu-close" class="text-neutral-muted hover:text-accent">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-                </button>
-            </div>
-            <nav class="space-y-8 font-sans text-xs uppercase tracking-[0.3em] font-bold">
-                <a href="<?php echo $base_path; ?>index.php" class="block hover:text-accent">Home</a>
-                <a href="<?php echo $base_path; ?>services.php" class="block hover:text-accent">Services</a>
-                <a href="<?php echo $base_path; ?>gallery.php" class="block hover:text-accent">Gallery</a>
-                <a href="<?php echo $base_path; ?>membership.php" class="block hover:text-accent">Membership</a>
-                <a href="<?php echo $base_path; ?>shop.php" class="block hover:text-accent">Boutique</a>
-                <a href="<?php echo $base_path; ?>contact.php" class="block hover:text-accent">Contact</a>
-            </nav>
-            <div class="mt-auto pt-10 border-t border-accent/10">
-                <a href="<?php echo $base_path; ?>booking.php" class="block w-full bg-accent text-white py-4 rounded-full text-center text-[10px] uppercase tracking-widest font-bold">Book Now</a>
-            </div>
-        </div>
-    </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // Mobile Menu Logic
-            const mobileMenuOpen = document.getElementById('mobile-menu-open');
-            const mobileMenuClose = document.getElementById('mobile-menu-close');
-            const mobileMenuDrawer = document.getElementById('mobile-menu-drawer');
-            const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
-            const mobileMenuPanel = document.getElementById('mobile-menu-panel');
-
-            const openMobileMenu = () => {
-                mobileMenuDrawer.classList.remove('pointer-events-none');
-                mobileMenuOverlay.classList.replace('opacity-0', 'opacity-100');
-                mobileMenuPanel.classList.replace('-translate-x-full', 'translate-x-0');
-            };
-
-            const closeMobileMenu = () => {
-                mobileMenuOverlay.classList.replace('opacity-100', 'opacity-0');
-                mobileMenuPanel.classList.replace('translate-x-0', '-translate-x-full');
-                setTimeout(() => mobileMenuDrawer.classList.add('pointer-events-none'), 500);
-            };
-
-            if (mobileMenuOpen) mobileMenuOpen.onclick = openMobileMenu;
-            if (mobileMenuClose) mobileMenuClose.onclick = closeMobileMenu;
-            if (mobileMenuOverlay) mobileMenuOverlay.onclick = closeMobileMenu;
 
             // Header Search Logic
             const searchOpen = document.getElementById('search-open');
