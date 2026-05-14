@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+<?php include 'partials/header.php'; ?>
 
 <!-- Booking Hero -->
 <section class="relative h-[40vh] flex items-center justify-center overflow-hidden">
@@ -47,6 +47,31 @@
                 </div>
             </div>
 
+            <!-- Payment Method Selection -->
+            <div class="space-y-4">
+                <label class="text-neutral-muted font-sans text-[10px] uppercase tracking-widest ml-1 font-bold">Payment Method</label>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <label class="relative cursor-pointer group">
+                        <input type="radio" name="payment" value="card" class="peer sr-only" checked>
+                        <div class="bg-white border border-accent/10 p-4 rounded-2xl text-center peer-checked:border-accent peer-checked:bg-accent/5 transition-all group-hover:shadow-lg">
+                            <span class="text-[10px] uppercase tracking-widest font-bold text-neutral-muted peer-checked:text-accent">Credit Card</span>
+                        </div>
+                    </label>
+                    <label class="relative cursor-pointer group">
+                        <input type="radio" name="payment" value="paypal" class="peer sr-only">
+                        <div class="bg-white border border-accent/10 p-4 rounded-2xl text-center peer-checked:border-accent peer-checked:bg-accent/5 transition-all group-hover:shadow-lg">
+                            <span class="text-[10px] uppercase tracking-widest font-bold text-neutral-muted peer-checked:text-accent">PayPal</span>
+                        </div>
+                    </label>
+                    <label class="relative cursor-pointer group">
+                        <input type="radio" name="payment" value="salon" class="peer sr-only">
+                        <div class="bg-white border border-accent/10 p-4 rounded-2xl text-center peer-checked:border-accent peer-checked:bg-accent/5 transition-all group-hover:shadow-lg">
+                            <span class="text-[10px] uppercase tracking-widest font-bold text-neutral-muted peer-checked:text-accent">At Salon</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
             <div class="space-y-2">
                 <label class="text-neutral-muted font-sans text-[10px] uppercase tracking-widest ml-1 font-bold">Additional Notes</label>
                 <textarea rows="4" placeholder="ANY SPECIAL REQUESTS OR PREFERENCES?" class="w-full bg-white border border-accent/10 px-6 py-4 rounded-xl focus:outline-none focus:border-accent transition-all text-sm font-sans tracking-wider resize-none text-neutral-dark"></textarea>
@@ -61,4 +86,4 @@
     </div>
 </section>
 
-<?php include 'footer.php'; ?>
+<?php include 'partials/footer.php'; ?>

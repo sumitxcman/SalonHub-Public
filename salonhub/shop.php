@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+<?php include 'partials/header.php'; ?>
 
 <!-- Shop Hero -->
 <section class="relative h-[50vh] flex items-center justify-center overflow-hidden">
@@ -23,10 +23,10 @@
                 <div>
                     <h3 class="text-accent font-playfair text-xl mb-6">Categories</h3>
                     <ul class="space-y-4 text-neutral-muted font-sans text-xs uppercase tracking-widest">
-                        <li><a href="#" class="hover:text-accent transition-colors flex justify-between">Skin Care <span>(12)</span></a></li>
-                        <li><a href="#" class="hover:text-accent transition-colors flex justify-between">Hair Care <span>(08)</span></a></li>
-                        <li><a href="#" class="hover:text-accent transition-colors flex justify-between">Fragrances <span>(05)</span></a></li>
-                        <li><a href="#" class="hover:text-accent transition-colors flex justify-between">Makeup Kits <span>(10)</span></a></li>
+                        <li><a href="<?php echo $base_path; ?>partials/spa.php" class="hover:text-accent transition-colors flex justify-between">Skin Care <span>(12)</span></a></li>
+                        <li><a href="<?php echo $base_path; ?>partials/hair.php" class="hover:text-accent transition-colors flex justify-between">Hair Care <span>(08)</span></a></li>
+                        <li><a href="<?php echo $base_path; ?>partials/spa.php" class="hover:text-accent transition-colors flex justify-between">Fragrances <span>(05)</span></a></li>
+                        <li><a href="<?php echo $base_path; ?>partials/makeup.php" class="hover:text-accent transition-colors flex justify-between">Makeup Kits <span>(10)</span></a></li>
                     </ul>
                 </div>
             </div>
@@ -43,7 +43,7 @@
                         <button class="absolute bottom-0 w-full bg-accent text-white py-4 font-sans uppercase tracking-[0.2em] text-[10px] translate-y-full group-hover:translate-y-0 transition-transform duration-500">Add to Bag</button>
                     </div>
                     <h4 class="text-xl font-playfair text-neutral-dark mb-2">Imperial Makeup Kit</h4>
-                    <p class="text-accent font-sans text-lg">$285.00</p>
+                    <p class="text-accent font-sans text-lg">₹8,500</p>
                 </div>
 
                 <!-- Product 2 -->
@@ -53,7 +53,7 @@
                         <button class="absolute bottom-0 w-full bg-accent text-white py-4 font-sans uppercase tracking-[0.2em] text-[10px] translate-y-full group-hover:translate-y-0 transition-transform duration-500">Add to Bag</button>
                     </div>
                     <h4 class="text-xl font-playfair text-neutral-dark mb-2">Velvet Skin Oil</h4>
-                    <p class="text-accent font-sans text-lg">$115.00</p>
+                    <p class="text-accent font-sans text-lg">₹4,200</p>
                 </div>
 
                 <!-- Product 3 -->
@@ -63,7 +63,7 @@
                         <button class="absolute bottom-0 w-full bg-accent text-white py-4 font-sans uppercase tracking-[0.2em] text-[10px] translate-y-full group-hover:translate-y-0 transition-transform duration-500">Add to Bag</button>
                     </div>
                     <h4 class="text-xl font-playfair text-neutral-dark mb-2">24K Gold Facial Mask</h4>
-                    <p class="text-accent font-sans text-lg">$350.00</p>
+                    <p class="text-accent font-sans text-lg">₹12,000</p>
                 </div>
 
             </div>
@@ -71,4 +71,4 @@
     </div>
 </section>
 
-<?php include 'footer.php'; ?>
+<?php include 'partials/footer.php'; ?>

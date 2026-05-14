@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+<?php include 'partials/header.php'; ?>
 
 <!-- Gallery Hero -->
 <section class="relative h-[40vh] flex items-center justify-center overflow-hidden">
@@ -17,10 +17,10 @@
 <div class="py-10 bg-white text-center">
     <div class="flex flex-wrap justify-center gap-8 font-sans text-xs uppercase tracking-[0.3em] text-neutral-muted">
         <a href="gallery.php" class="hover:text-accent transition-colors text-accent border-b border-accent pb-1">All</a>
-        <a href="hair.php" class="hover:text-accent transition-colors">Hair</a>
-        <a href="makeup.php" class="hover:text-accent transition-colors">Makeup</a>
-        <a href="nails.php" class="hover:text-accent transition-colors">Nails</a>
-        <a href="spa.php" class="hover:text-accent transition-colors">Spa</a>
+        <a href="partials/hair.php" class="hover:text-accent transition-colors">Hair</a>
+        <a href="partials/makeup.php" class="hover:text-accent transition-colors">Makeup</a>
+        <a href="partials/nails.php" class="hover:text-accent transition-colors">Nails</a>
+        <a href="partials/spa.php" class="hover:text-accent transition-colors">Spa</a>
     </div>
 </div>
 
@@ -67,4 +67,4 @@
     </div>
 </section>
 
-<?php include 'footer.php'; ?>
+<?php include 'partials/footer.php'; ?>

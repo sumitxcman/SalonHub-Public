@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+<?php include 'partials/header.php'; ?>
 
 <!-- Hero Section (Cinematic Pink & White) -->
 <section class="relative h-screen flex items-center justify-center overflow-hidden">
@@ -10,14 +10,14 @@
 
     <!-- Content -->
     <div class="relative z-10 text-center max-w-5xl px-6 reveal">
-        <h3 class="text-accent font-sans uppercase tracking-[0.6em] mb-6 text-sm md:text-base animate-slide-up font-bold">Experience the Extraordinary</h3>
+        <h3 class="text-accent font-sans uppercase tracking-[0.6em] mb-6 text-sm md:text-base animate-slide-up font-bold">A Symphony of Style & Grace</h3>
         <h1 class="text-6xl md:text-8xl lg:text-9xl font-playfair text-neutral-dark mb-10 leading-none">
-            Perfect <span class="italic text-accent text-glow">Look</span> <br>
-            <span class="text-4xl md:text-6xl font-serif">With Mastery</span>
+            Bespoke <span class="italic text-accent text-glow">Artistry</span> <br>
+            <span class="text-4xl md:text-6xl font-serif">Elevated for You</span>
         </h1>
         
         <p class="text-neutral-muted font-sans max-w-2xl mx-auto mb-12 text-lg md:text-xl leading-relaxed">
-            Where luxury meets artistry. We craft bespoke beauty experiences that transcend the ordinary, in a sanctuary of pink elegance.
+            Indulge in a cinematic journey of transformation. Our sanctuary blends soft pink aesthetics with imperial precision, crafting beauty experiences that are as unique as your own signature.
         </p>
 
         <div class="flex flex-col md:flex-row items-center justify-center gap-6">
@@ -121,4 +121,4 @@
     </div>
 </section>
 
-<?php include 'footer.php'; ?>
+<?php include 'partials/footer.php'; ?>

@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+<?php include 'partials/header.php'; ?>
 
 <!-- Services Hero -->
 <section class="relative h-[60vh] flex items-center justify-center overflow-hidden">
@@ -32,14 +32,14 @@
                             <h4 class="text-xl font-playfair text-neutral-dark">Master Cut & Style</h4>
                             <p class="text-neutral-muted text-xs uppercase tracking-widest mt-1">60 Minutes of artistry</p>
                         </div>
-                        <span class="text-accent font-sans font-bold text-xl">$120+</span>
+                        <span class="text-accent font-sans font-bold text-xl">₹2,500+</span>
                     </div>
                     <div class="flex justify-between items-end border-b border-accent/10 pb-4">
                         <div>
                             <h4 class="text-xl font-playfair text-neutral-dark">Platinum Balayage</h4>
                             <p class="text-neutral-muted text-xs uppercase tracking-widest mt-1">Full transformation</p>
                         </div>
-                        <span class="text-accent font-sans font-bold text-xl">$350+</span>
+                        <span class="text-accent font-sans font-bold text-xl">₹12,000+</span>
                     </div>
                 </div>
                 <a href="booking.php" class="inline-block bg-accent text-white px-8 py-3 rounded-full text-xs uppercase tracking-widest hover:bg-neutral-dark hover:text-white transition-all duration-300">Book Session</a>
@@ -61,14 +61,14 @@
                             <h4 class="text-xl font-playfair text-neutral-dark">24K Gold Facial</h4>
                             <p class="text-neutral-muted text-xs uppercase tracking-widest mt-1">Lifting & Radiance</p>
                         </div>
-                        <span class="text-accent font-sans font-bold text-xl">$250</span>
+                        <span class="text-accent font-sans font-bold text-xl">₹5,500</span>
                     </div>
                     <div class="flex justify-between items-end border-b border-accent/10 pb-4">
                         <div>
                             <h4 class="text-xl font-playfair text-neutral-dark">Cellular Repair Therapy</h4>
                             <p class="text-neutral-muted text-xs uppercase tracking-widest mt-1">Anti-aging mastery</p>
                         </div>
-                        <span class="text-accent font-sans font-bold text-xl">$180</span>
+                        <span class="text-accent font-sans font-bold text-xl">₹4,200</span>
                     </div>
                 </div>
                 <a href="booking.php" class="inline-block bg-accent text-white px-8 py-3 rounded-full text-xs uppercase tracking-widest hover:bg-neutral-dark hover:text-white transition-all duration-300">Book Session</a>
@@ -88,25 +88,25 @@
                 <div class="text-accent text-4xl mb-6 group-hover:scale-110 transition-transform">✦</div>
                 <h4 class="text-xl font-playfair text-neutral-dark mb-4">Aromatic Spa</h4>
                 <p class="text-neutral-muted text-xs uppercase tracking-widest leading-relaxed">Essential oils curated from the hills of Provence.</p>
-                <div class="mt-8 text-accent font-bold">$150</div>
+                <div class="mt-8 text-accent font-bold">₹3,500</div>
                 <a href="booking.php" class="text-accent uppercase tracking-widest text-[10px] font-bold border-b border-accent pb-1 hover:text-neutral-dark hover:border-neutral-dark transition-all">Select Service</a>
             </div>
             <div class="p-8 bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all group">
                 <div class="text-accent text-4xl mb-6 group-hover:scale-110 transition-transform">✦</div>
                 <h4 class="text-xl font-playfair text-neutral-dark mb-4">Deep Tissue</h4>
                 <p class="text-neutral-muted text-xs uppercase tracking-widest leading-relaxed">Releasing tension with imperial pressure points.</p>
-                <div class="mt-8 text-accent font-bold">$180</div>
+                <div class="mt-8 text-accent font-bold">₹4,500</div>
                 <a href="booking.php" class="text-accent uppercase tracking-widest text-[10px] font-bold border-b border-accent pb-1 hover:text-neutral-dark hover:border-neutral-dark transition-all">Select Service</a>
             </div>
             <div class="p-8 bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all group">
                 <div class="text-accent text-4xl mb-6 group-hover:scale-110 transition-transform">✦</div>
                 <h4 class="text-xl font-playfair text-neutral-dark mb-4">Zen Ritual</h4>
                 <p class="text-neutral-muted text-xs uppercase tracking-widest leading-relaxed">A holistic 120-min journey of mind and body.</p>
-                <div class="mt-8 text-accent font-bold">$300</div>
+                <div class="mt-8 text-accent font-bold">₹7,500</div>
                 <a href="booking.php" class="text-accent uppercase tracking-widest text-[10px] font-bold border-b border-accent pb-1 hover:text-neutral-dark hover:border-neutral-dark transition-all">Select Service</a>
             </div>
         </div>
     </div>
 </section>
 
-<?php include 'footer.php'; ?>
+<?php include 'partials/footer.php'; ?>
