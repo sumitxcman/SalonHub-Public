@@ -27,7 +27,7 @@
                         <span class="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center text-accent">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
                         </span>
-                        Empire Plaza, South Extension Part II, New Delhi - 110049
+                        Plot No. 45, Main Road, Swaroop Nagar, Delhi - 110042
                     </p>
                     <p class="flex items-center gap-4">
                         <span class="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center text-accent">
@@ -46,7 +46,7 @@
 
             <!-- Map Placeholder -->
             <div class="w-full h-[400px] rounded-[2.5rem] overflow-hidden grayscale opacity-70 border border-accent/10 hover:grayscale-0 transition-all duration-1000 shadow-2xl">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.656517178496!2d77.2212981150808!3d28.57259698244109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce25624778393%3A0xc6659a7215907914!2sSouth%20Extension%20II%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3498.07684534839!2d77.1601006760592!3d28.74716167559388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d026369f648ad%3A0xc3b5e4f4a3e2e1e!2sSwaroop%20Nagar%2C%20Delhi%2C%20110042!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
 
